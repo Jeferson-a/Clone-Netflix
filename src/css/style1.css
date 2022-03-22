@@ -1,0 +1,251 @@
+
+        body{
+            padding: 0px;
+            margin: 0px;
+            background-image: url(../img/netflix-fundo.jpg);
+            background-repeat: no-repeat;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            background-color: #000;
+        }
+        .botao{
+            background-color: #E20813;
+            border-radius: 5px;
+            border: 0px;
+            color: #ffffff;
+            font-size:18px ;
+            padding: 7px 17px;
+            font-weight: 400;
+        }
+        select{
+            font-size: 14px;
+            background-color: #00000000;
+            color: #ffffff;
+            height: 38px;
+            width: 150px;
+            border: solid 1px gray;
+            padding: 8px 22px 8px 22px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        option{
+            background-color: gray;
+        }
+         
+
+
+
+
+        #principal{
+            background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+            height: 690px;
+            border-bottom: solid 8px gray;
+        }
+        #topo{
+            display: flex;
+            flex-direction: row;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-top: 25px;
+        }
+        #esquerda{
+            
+            height: 30px;
+            width: 25%;
+            display: inline-block;
+
+           
+        }
+        #direita{
+           
+            height: 30px;
+            width: 75%;
+            display: inline-block;
+            text-align: right;
+        }
+        #logo{
+            max-width: 145px;
+            margin:0px;
+        }
+        #chamada{
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            padding-top: 100px;
+        }
+        #chamada h2{
+            font-size: 50px;
+            
+        }
+        #chamada h4{
+            font-size: 26px;
+            font-weight: normal;
+        }
+        .cadastro{
+            font-size: 18px;
+            font-weight: normal;
+            margin: auto;
+            width: 50%;
+            text-align: center;
+        }
+        .email_cadastro{
+            width: 500px;
+            height: 48px;
+            border: 0px;
+            padding-left: 20px;
+            font-size: 18px;
+            cursor: text;
+        }
+        .submit_cadastro{
+            background-color: #E20813;
+            color: #ffffff;
+            border: 0px;
+            height: 51px;
+            width: 130px;
+            font-size: 18px;
+            margin-left: -5px;
+            cursor: pointer;
+            padding: 0px 16px;
+        }
+        .destaque{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            display: flex;
+            flex-direction: row;
+            padding-left: 10%;
+            padding-right: 10%;
+            background-color: #000000;
+            border-bottom: solid 8px rgba(128, 128, 128, 0.336);
+        }
+        .texto{
+            width: 50%;
+        }
+        .texto >h3{
+            font-size: 50px;
+            font-weight: normal;
+        }
+        .texto >h4{
+            font-size: 26px;
+            font-weight: normal;
+        }
+        .foto{
+            width: 50%;
+        }
+        .foto img{
+            width: 95%;
+        }
+        #faq{
+            background-color: #000000;
+            padding-bottom: 60px;
+            text-align: center;
+            font-size:2.1rem;
+            border-bottom: solid 8px #222;
+           
+        }
+        #faq >h2{
+           margin-top: 70px;
+           
+        }   
+        details{
+            background-color: rgba(128, 128, 128, 0.336);
+            width: 50%;
+            height: auto;
+            margin: auto;
+            font-size:24px ;
+            padding: 20px 44px 16px 24px;
+            margin-top: 10px;
+            text-align: start;
+            
+            
+        }
+        details > summary{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        footer{
+            width: 80%;
+            margin: auto;
+            color: #757575;
+           
+            
+        }
+       
+        
+        #rodape{
+            display: flex;
+            flex-direction: row;
+        }
+       
+        #rodape > ul{
+            width: 22%;
+            justify-content:space-between ;
+            list-style: none;
+            line-height: 2.5;
+            font-size: 13px;
+            padding: 0px;
+        }
+        footer{
+            width: 70%;
+            margin: auto;
+            padding-left: 15%;
+        }
+        footer > p{
+            margin-top: 70px;
+            
+        }
+
+        
+        @media screen and(max-width: 600px){
+            #cadastro{
+                width: 90%;
+            }
+            #chamada{
+                width:90% ;
+            }
+            #submite_cadastro{
+                padding-top: 10px;
+                width: 120px;
+            }
+            .destaque{
+                flex-direction: column;
+            }
+            .texto{
+                width: 100%;
+                text-align: center;
+                
+            }
+            .foto{
+                
+                width: 100%;
+            }
+            .texto >h3{
+            font-size: 42px;
+            
+            }
+            .texto >h4{
+            font-size: 20px;
+            
+            }
+            #chamada > h2{
+                font-size: 42px;
+            }
+            .foto > img{
+                width: 100%;
+            }
+            #faq > h2{
+                font-size: 42px;
+            }
+            details{
+                width: 70%;
+                font-size: 20px;
+            }
+        }
+        details > summary::after{
+            content:'+';
+            
+        }
+        details[open] > summary::after{
+            content:'x';
+        }
+       
